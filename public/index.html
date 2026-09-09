@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <meta
+    name="theme-color"
+    content="#070708"
+  >
+
+  <title>Devil Room 😈</title>
+
+  <link
+    rel="stylesheet"
+    href="/style.css"
+  >
+</head>
+
+<body>
+
+  <div class="app-shell">
+
+    <!-- HEADER -->
+
+    <header class="topbar">
+
+      <div class="brand">
+
+        <div class="devil-logo">
+          😈
+        </div>
+
+        <div class="brand-info">
+
+          <h1>
+            Devil Room
+          </h1>
+
+          <div class="status">
+            <span></span>
+            anonymous room
+          </div>
+
+        </div>
+
+      </div>
+
+      <div
+        class="user-pill"
+        id="usernameLabel"
+      >
+        Anonymous
+      </div>
+
+    </header>
+
+
+    <!-- CHAT -->
+
+    <main
+      class="chat"
+      id="chat"
+    >
+
+      <div class="welcome">
+
+        <div class="welcome-icon">
+          👁️
+        </div>
+
+        <h2>
+          Welcome to the Room
+        </h2>
+
+        <p>
+          Ngobrol anonim tanpa perlu membuat akun.
+        </p>
+
+      </div>
+
+      <div
+        id="messages"
+        class="messages"
+      ></div>
+
+      <div
+        id="typing"
+        class="typing"
+      ></div>
+
+    </main>
+
+
+    <!-- ATTACHMENT PREVIEW -->
+
+    <section
+      id="attachmentPreview"
+      class="attachment-preview hidden"
+    >
+
+      <div id="previewContent"></div>
+
+      <button
+        id="removeAttachment"
+        class="icon-btn close-preview"
+        type="button"
+      >
+        ×
+      </button>
+
+    </section>
+
+
+    <!-- GIF URL MODAL -->
+
+    <div
+      id="gifModal"
+      class="modal hidden"
+    >
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h3>Masukkan URL GIF</h3>
+          <button
+            id="closeGifModal"
+            class="icon-btn close-modal"
+            type="button"
+          >
+            ×
+          </button>
+        </div>
+
+        <div class="modal-body">
+
+          <input
+            id="gifUrlInput"
+            type="url"
+            placeholder="https://example.com/gif.gif"
+            class="gif-input"
+          >
+
+          <div
+            id="gifPreview"
+            class="gif-preview hidden"
+          ></div>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button
+            id="cancelGifBtn"
+            class="btn-cancel"
+            type="button"
+          >
+            Batal
+          </button>
+
+          <button
+            id="sendGifBtn"
+            class="btn-send"
+            type="button"
+            disabled
+          >
+            Kirim GIF
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- STICKER PICKER -->
+
+    <div
+      id="stickerPicker"
+      class="sticker-picker hidden"
+    >
+
+      <button type="button">😈</button>
+      <button type="button">👿</button>
+      <button type="button">🔥</button>
+      <button type="button">💀</button>
+      <button type="button">🩸</button>
+      <button type="button">🖤</button>
+
+      <button type="button">👁️</button>
+      <button type="button">☠️</button>
+      <button type="button">🥀</button>
+      <button type="button">😵</button>
+      <button type="button">🤡</button>
+      <button type="button">⚡</button>
+
+      <button type="button">👹</button>
+      <button type="button">👺</button>
+      <button type="button">🕷️</button>
+      <button type="button">🌑</button>
+      <button type="button">🦇</button>
+      <button type="button">🔪</button>
+
+    </div>
+
+
+    <!-- COMPOSER -->
+
+    <form
+      id="composer"
+      class="composer"
+    >
+
+      <input
+        id="fileInput"
+        type="file"
+        accept="image/*,video/*"
+        hidden
+      >
+
+      <button
+        id="attachBtn"
+        class="icon-btn"
+        type="button"
+        title="Lampirkan"
+      >
+        ＋
+      </button>
+
+      <button
+        id="gifBtn"
+        class="tool-btn"
+        type="button"
+      >
+        GIF
+      </button>
+
+      <button
+        id="stickerBtn"
+        class="tool-btn"
+        type="button"
+      >
+        ☺
+      </button>
+
+      <textarea
+        id="messageInput"
+        rows="1"
+        maxlength="2000"
+        placeholder="Tulis pesan anonim..."
+      ></textarea>
+
+      <button
+        id="sendBtn"
+        class="send-btn"
+        type="submit"
+      >
+        ➤
+      </button>
+
+    </form>
+
+
+    <footer>
+      Devil Room • Localhost
+    </footer>
+
+  </div>
+
+
+  <div
+    id="toast"
+    class="toast"
+  ></div>
+
+
+  <script src="/app.js"></script>
+
+</body>
+
+</html>
